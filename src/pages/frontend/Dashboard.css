@@ -1,7 +1,7 @@
 /* CSS (Dashboard.css) */
 .dashboard {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 30px;
+    padding: 30px 20px 20px; /* Top padding to offset fixed navbar */
     background: linear-gradient(to right, #ece9e6, #ffffff);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -59,11 +59,7 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
     background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 table th, table td {
@@ -89,32 +85,9 @@ tr:hover {
     background-color: #f1f5ff;
     transition: background-color 0.3s ease;
 }
-.nav-bar {
-    /* background: linear-gradient(to right, #3c3c8a, #4688f1); */
-    padding: 10px 0;
-}
-
-/* Remove default list style and spacing */
-.nav-bar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* This puts the items in a row horizontally */
-    gap: 30px;     /* Optional: adds space between items */
-}
-
-.nav-bar li {
-    display: inline-block; /* Ensures items appear side-by-side */
-    margin-left: 20px;
-}
-
-.nav-bar a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav-bar a:hover {
-    color: #ffd700; /* gold-ish hover color */
+.table-container {
+    max-height: 300px; /* Set max height for the scroll */
+    overflow-y: auto; /* Add vertical scroll if needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }

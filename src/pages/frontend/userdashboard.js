@@ -97,7 +97,28 @@ const Dashboard = () => {
                     </button>
                 </div>
 
-                {/* User List Table */}
+                <div className="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>USER ID</th>
+                <th>EMAIL</th>
+                <th>Armstrong Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            {sortedUsers.map((user, index) => (
+                <tr key={index}>
+                    <td>{user.user_id}</td>
+                    <td>{user.email}</td>
+                    <td>{user.armstrong_number}</td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
+</div>
+
+                {/* User List Table
                 <table>
                     <thead>
                         <tr>
@@ -115,7 +136,7 @@ const Dashboard = () => {
                             </tr>
                         ))}
                     </tbody>
-                </table>
+                </table> */}
             </div>
         </>
     );
