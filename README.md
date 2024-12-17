@@ -70,10 +70,10 @@ This is a full-stack application that:
 
 **Fetches all Armstrong numbers associated with the given user ID.**
 
-```GET /user/{id}/numbers```
+```GET /user/${userId}/numbers```
 
 **Fetches all users along with their Armstrong numbers.**
 
-```GET /users```
+```GET [/users](http://localhost:8080/users)```
 
 
