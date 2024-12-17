@@ -74,6 +74,6 @@ This is a full-stack application that:
 
 **Fetches all users along with their Armstrong numbers.**
 
-```GET [/users](http://localhost:8080/users)```
+```GET /users```
 
 
