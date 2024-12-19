@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./home.css";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for redirection
+import { useNavigate } from "react-router-dom"; 
 
 const Home = () => {
   const [formValues, setFormValues] = useState({
@@ -11,10 +11,10 @@ const Home = () => {
   });
 
   const [formErrors, setFormErrors] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false); // Track submission
-  const [userId, setUserId] = useState(null); // Store user_id
-  const [apiResponse, setApiResponse] = useState(""); // Store API response
-  const navigate = useNavigate(); // Initialize useNavigate
+  const [isSubmitted, setIsSubmitted] = useState(false); 
+  const [userId, setUserId] = useState(null); 
+  const [apiResponse, setApiResponse] = useState(""); 
+  const navigate = useNavigate(); 
 
   // Handle input change
   const handleChange = (e) => {

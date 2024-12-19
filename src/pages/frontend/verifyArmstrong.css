@@ -104,17 +104,16 @@ body {
     padding: 10px 0;
 }
 
-/* Remove default list style and spacing */
 .nav-bar ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* This puts the items in a row horizontally */
-    gap: 30px;     /* Optional: adds space between items */
+    display: flex; 
+    gap: 30px;     
 }
 
 .nav-bar li {
-    display: inline-block; /* Ensures items appear side-by-side */
+    display: inline-block; 
     margin-left: 20px;
 }
 
@@ -126,5 +125,5 @@ body {
 }
 
 .nav-bar a:hover {
-    color: #ffd700; /* gold-ish hover color */
+    color: #ffd700; 
 }

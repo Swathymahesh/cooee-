@@ -99,7 +99,7 @@ func VerifyHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if r.Method == http.MethodOptions {
-		w.WriteHeader(http.StatusNoContent) // Preflight request
+		w.WriteHeader(http.StatusNoContent) 
 		return
 	}
 
@@ -107,22 +107,4 @@ func VerifyHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 // IsArmstrongNumber checks if a number is an Armstrong number
-func IsArmstrongNumber(num int) bool {
-	temp := num
-	var digits []int
 
-	// Extract digits
-	for temp > 0 {
-		digits = append(digits, temp%10)
-		temp /= 10
-	}
-
-	// Calculate the Armstrong sum
-	power := len(digits)
-	sum := 0
-	for _, digit := range digits {
-		sum += int(math.Pow(float64(digit), float64(power)))
-	}
-
-	return sum == num
-}

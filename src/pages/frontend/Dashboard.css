@@ -1,7 +1,7 @@
 /* CSS (Dashboard.css) */
 .dashboard {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 30px 20px 20px; /* Top padding to offset fixed navbar */
+    padding: 30px 20px 20px; 
     background: linear-gradient(to right, #ece9e6, #ffffff);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -86,8 +86,8 @@ tr:hover {
     transition: background-color 0.3s ease;
 }
 .table-container {
-    max-height: 300px; /* Set max height for the scroll */
-    overflow-y: auto; /* Add vertical scroll if needed */
+    max-height: 300px; 
+    overflow-y: auto; 
     border: 1px solid #ddd;
     border-radius: 8px;
 }

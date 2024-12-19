@@ -5,11 +5,11 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
-    const [users, setUsers] = useState([]); // Store user data
-    const [filter, setFilter] = useState(''); // For filtering users
-    const [sortKey, setSortKey] = useState(''); // For sorting users
-    const [isAscending, setIsAscending] = useState(true); // Sorting order
-    const [error, setError] = useState(null); // Error handling
+    const [users, setUsers] = useState([]); 
+    const [filter, setFilter] = useState(''); 
+    const [sortKey, setSortKey] = useState(''); 
+    const [isAscending, setIsAscending] = useState(true); 
+    const [error, setError] = useState(null); 
 
     // Fetch data dynamically from API
     useEffect(() => {
