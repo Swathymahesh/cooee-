@@ -106,5 +106,5 @@ func VerifyHandler(w http.ResponseWriter, r *http.Request) {
 	http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
 }
 
-// IsArmstrongNumber checks if a number is an Armstrong number
+
 
