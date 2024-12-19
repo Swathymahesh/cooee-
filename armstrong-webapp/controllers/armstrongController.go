@@ -4,17 +4,15 @@ import (
 	"armstrong-webapp/database"
 	"armstrong-webapp/models"
 	"encoding/json"
-	"fmt"    // For formatted output (optional, if needed)
-	"io"         // For reading the raw body
-	"log"        // For logging debug information
+	"fmt"    
+	"io"         
+	"log"        
 	"net/http"
 	"strconv"
 	"strings"
 )
 
-
-// VerifyArmstrongNumber checks if a number is an Armstrong number and saves it for a user
-// Debug log to inspect the incoming request body
+// verifies the armstrong number entered
 func VerifyArmstrongNumber(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
@@ -81,7 +79,6 @@ func VerifyArmstrongNumber(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusCreated)
 response := map[string]string{"message": fmt.Sprintf("%d is an Armstrong number and has been saved", num)}
 json.NewEncoder(w).Encode(response)
-
 }
 
 // GetUserArmstrongNumbers retrieves Armstrong numbers for a specific user
